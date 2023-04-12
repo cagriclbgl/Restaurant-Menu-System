@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B681B7AF-6668-4676-991A-FC883618254D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>RestoranSistem1</RootNamespace>
+    <AssemblyName>RestoranSistem1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="anaYemek.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="anaYemek.Designer.cs">
+      <DependentUpon>anaYemek.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Asci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Asci.Designer.cs">
+      <DependentUpon>Asci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Atistirmalik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Atistirmalik.Designer.cs">
+      <DependentUpon>Atistirmalik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseConnections.cs" />
+    <Compile Include="DatabaseOperations.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Garson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Garson.Designer.cs">
+      <DependentUpon>Garson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GercekGarson.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GercekGarson.Designer.cs">
+      <DependentUpon>GercekGarson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Icecekler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Icecekler.Designer.cs">
+      <DependentUpon>Icecekler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kasa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kasa.Designer.cs">
+      <DependentUpon>kasa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KasiyerGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KasiyerGiris.Designer.cs">
+      <DependentUpon>KasiyerGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainMenu.Designer.cs">
+      <DependentUpon>mainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Personel.Designer.cs">
+      <DependentUpon>Personel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rapor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rapor.Designer.cs">
+      <DependentUpon>Rapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SiparisMasalar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SiparisMasalar.Designer.cs">
+      <DependentUpon>SiparisMasalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tatlilar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tatlilar.Designer.cs">
+      <DependentUpon>Tatlilar.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="anaYemek.resx">
+      <DependentUpon>anaYemek.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Asci.resx">
+      <DependentUpon>Asci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Atistirmalik.resx">
+      <DependentUpon>Atistirmalik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Garson.resx">
+      <DependentUpon>Garson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GercekGarson.resx">
+      <DependentUpon>GercekGarson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Icecekler.resx">
+      <DependentUpon>Icecekler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kasa.resx">
+      <DependentUpon>kasa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KasiyerGiris.resx">
+      <DependentUpon>KasiyerGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainMenu.resx">
+      <DependentUpon>mainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personel.resx">
+      <DependentUpon>Personel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Rapor.resx">
+      <DependentUpon>Rapor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SiparisMasalar.resx">
+      <DependentUpon>SiparisMasalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tatlilar.resx">
+      <DependentUpon>Tatlilar.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MENU %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MASA %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MUTFAK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\REZERVASYON %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PERSONEL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GARSON %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GARSON %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GARSON %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled design %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RAPOR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RAPOR %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RAPOR %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled design %289%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled design %288%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GİRİŞ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled design %286%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TERAS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled design %286%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GARSON %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SİPARİŞLER.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MUTFAK1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SİPARİŞLER %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KASİYER.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KREDİ  BANKA KARTI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KREDİ  BANKA KARTI %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KASİYER %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled design %289%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GİRİŞ1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ANA YEMEK %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ANA YEMEK %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ANA YEMEK %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ANA YEMEK %287%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ANA YEMEK %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ANA YEMEK %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ana yemekler.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ana yemekler %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ana yemekler %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ana yemekler %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ana yemekler %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ana yemekler %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ana yemekler %287%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MENU %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aşçı.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
